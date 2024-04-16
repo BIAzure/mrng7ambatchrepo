@@ -1,0 +1,17 @@
+{
+	"name": "AzureSqlDatabaseLinkedServices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVaulTestLinkedServices",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "DevSQLSERVERSecret"
+			}
+		}
+	}
+}
